@@ -46,9 +46,6 @@ ul {
   list-style: none;
 }
 
-h2,
-h3,
-p,
 li,
 a {
   text-decoration: none;
@@ -62,9 +59,7 @@ img {
 /*Шапка*/
 
 .header {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--header-border-color);
+  border: 1px solid var(--header-border-color);
 }
 
 .container {
@@ -129,7 +124,7 @@ img {
 
 .nav-content {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -146,7 +141,7 @@ img {
 }
 .contact-link {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -175,10 +170,16 @@ img {
 }
 
 .hero {
-  background-color: var(--hero-background-color);
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 200px 0;
   text-align: center;
-  background-image: url(../images/overlay.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/overlay.jpg);
   background-repeat: no-repeat;
 }
 
@@ -253,7 +254,6 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  gap: 30px;
   border-radius: 4px;
 
   background-color: var(--team-background-color);
@@ -279,7 +279,6 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 /* section team*/
 .team {
@@ -398,8 +397,6 @@ img {
 }
 
 .span-logo {
-  /* margin-bottom: 28px;*/
-
   color: var(--primary-white-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -408,9 +405,10 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.footer-item :not(:last-child) {
+.footer-item:not(:last-child) {
   margin-bottom: 12px;
 }
+
 .footer-link {
   display: block;
 
@@ -524,9 +522,7 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.project {
-  display: block;
-}
+
 .project-cards {
   display: flex;
   flex-wrap: wrap;
