@@ -269,8 +269,7 @@ img {
   gap: 30px;
 }
 .direction-title,
-.team-title,
-.client-title {
+.team-title {
   padding-top: 0;
   margin-bottom: 50px;
   color: var(--primary-text-color);
@@ -351,13 +350,13 @@ img {
 }
 
 /*Clients*/
+
 .client-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
   color: var(--social-icon-color);
-  margin-bottom: 94px;
 }
 .client-item {
   width: 170px;
@@ -372,9 +371,23 @@ img {
   fill: var(--social-icon-color);
   border: solid 1px var(--border-client-color);
 }
-.client-icon:hover {
+.client-link:hover {
   fill: var(--accent-color);
   border: solid 1px var(--accent-color);
+}
+/*.client-item:hover{
+  fill: var(--accent-color);
+}*/
+
+.client-title {
+  padding-top: 0;
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /*footer*/
