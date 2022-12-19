@@ -371,7 +371,8 @@ img {
   fill: var(--social-icon-color);
   border: solid 1px var(--border-client-color);
 }
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   fill: var(--accent-color);
   border: solid 1px var(--accent-color);
 }
